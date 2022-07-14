@@ -1,0 +1,17 @@
+
+exam <- read.csv("csv_exam.csv")
+exam
+library(dplyr)
+exam %>% filter(class == 1)
+
+library(ggplot2)
+cars <- as.data.frame(ggplot2::mpg)
+cars
+lower <- cars %>% filter(displ <= 4)
+mean(lower$hwy)
+
+upper <- cars %>% filter(displ >= 5)
+mean(upper$hwy)
+S
+import 
+help()
